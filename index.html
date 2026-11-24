@@ -96,7 +96,7 @@
   </header>
 
   <div class="meta">
-    <div><b>Effective date:</b> November 8, 2026</div>
+    <div><b>Effective date:</b> November 24, 2026</div>
     <div><b>App:</b> QR &amp; Barcode Scanner (<code>com.ehsan.qrscanner</code>)</div>
     <div><b>Contact:</b> <a href="mailto:ehsanahmadkhan525.am@gmail.com">ehsanahmadkhan525.am@gmail.com</a></div>
   </div>
@@ -108,7 +108,10 @@
   <ul>
     <li>The app does <strong>not</strong> require an account.</li>
     <li>The app does <strong>not</strong> collect, transmit, or share any personal information.</li>
-    <li>There are <strong>no ads</strong>, no analytics, and no third-party tracking SDKs.</li>
+    <li>There are <strong>no ads</strong> and no third-party tracking SDKs.</li>
+    <li>Google&rsquo;s ML Kit barcode library (used for scanning) sends Google a small amount
+        of technical diagnostics data. It does <strong>not</strong> include your scanned content
+        or camera images. See &ldquo;Third-party services&rdquo; below.</li>
     <li>Your scan and generation <strong>history is stored only on your device</strong>.</li>
     <li>The <strong>camera</strong> is used solely to scan QR codes and barcodes. Camera
         frames are processed on your device and are never uploaded or stored.</li>
@@ -132,13 +135,21 @@
   <h2>Third-party services</h2>
 
   <div class="callout">
-    <p>The app does not include advertising, analytics, or crash-reporting SDKs, and does
-    not send your data to any third party.</p>
+    <p>The app does not include advertising, analytics, or crash-reporting SDKs. The app
+    itself does not send your personal data or scanned content to anyone.</p>
   </div>
 
   <p>Barcode detection uses Google&rsquo;s on-device ML Kit barcode scanning, which runs
-  locally on your device through Google Play services. Scanned content is not sent to
-  Google by the app.</p>
+  locally on your device. Scanned content and camera images are not sent to Google.</p>
+
+  <p><strong>ML Kit diagnostics.</strong> To measure performance and fix problems, the ML Kit
+  library may send Google technical data such as: device information (manufacturer, model,
+  OS version), app information (package name, app version), a per-installation identifier
+  that is not meant to identify you or your device, performance metrics, API configuration,
+  and error codes. This data is encrypted in transit (HTTPS) and, according to Google, is
+  not transferred to third parties. Details:
+  <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>
+  and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
   <p>If you tap a link, email address, or phone number from a scan result, the app hands it
   to another app you have chosen (such as your browser or dialer). What happens next is
@@ -147,8 +158,8 @@
   <h2>Permissions</h2>
   <ul>
     <li><strong>Camera</strong> &mdash; required to scan codes.</li>
-    <li><strong>Internet</strong> &mdash; the app does not send your data anywhere; this
-        permission is retained for standard platform and Play services functionality.</li>
+    <li><strong>Internet</strong> &mdash; used by Google ML Kit for the diagnostics described
+        above. The app does not send your scans or personal data anywhere.</li>
     <li><strong>Storage (Android 9 and below only)</strong> &mdash; used to save generated
         QR images to your gallery.</li>
   </ul>
@@ -157,12 +168,12 @@
   microphone, or other unrelated permissions.</p>
 
   <h2>Children</h2>
-  <p>The app is a general-purpose utility and is not directed to children under 13. It
-  collects no data from any user, including children.</p>
+  <p>The app is a general-purpose utility and is not directed to children under 13. The app
+  collects no personal data from any user, including children.</p>
 
   <h2>Data deletion</h2>
   <p>All app data is stored locally. To delete it, clear history within the app or uninstall
-  the app.</p>
+  the app. ML Kit diagnostics data is handled by Google under its privacy policy.</p>
 
   <h2>Changes</h2>
   <p>We may update this policy. Material changes will be reflected by updating the effective
